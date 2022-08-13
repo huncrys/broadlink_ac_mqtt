@@ -1,15 +1,7 @@
-# Broadlink Air Conditioners to mqtt  
------------------------------------------------------------ Donations --------------------------------------------------------------
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://www.paypal.me/liaanvdm)
-
-#### BTC Donations: 1DaGtHqaYvvDrXcpiNoNkNJgkmm6dEp7Lq
-------------------------------------------------------------------------------------------------------------------------------------------------
-#### Docker version:  https://github.com/broadlink-ac/broadlink_ac_mqtt_docker
+# Broadlink Air Conditioners to MQTT
 
 #### Air Conditioners compatibility 
   * Dunham bush --> Tested and working
-
   * Rcool Solo --> Tested and working
   * Akai 9000BTU  --> Tested and working
   * Rinnai  --> Tested and working .. autodiscovery name seems to be buggy
