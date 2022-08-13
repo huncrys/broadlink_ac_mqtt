@@ -78,7 +78,7 @@ def read_config(config_file_path):
 	config["mqtt_user"]= config_file["mqtt"].get("user")
 	config["mqtt_password"] = config_file["mqtt"].get("passwd")
 	##set client id if set, otherwise just add timestamp to generic to prevent conflicts
-	config["mqtt_client_id"] = config_file["mqtt"]["client_id"] if config_file["mqtt"]["client_id"] else 'broadlink_to_mqtt-'+str(time.time())
+	config["mqtt_client_id"] = config_file["mqtt"]["client_id"] if "client_id" in config_file["mqtt"] else 'broadlink_to_mqtt-'+str(time.time())
 	config["mqtt_topic_prefix"] = config_file["mqtt"]["topic_prefix"]
 	config["mqtt_auto_discovery_topic"] = config_file["mqtt"]["auto_discovery_topic"] if "auto_discovery_topic" in config_file["mqtt"] else False
 	config["mqtt_auto_discovery_topic_retain"] = config_file["mqtt"]["auto_discovery_topic_retain"] if "auto_discovery_topic_retain" in config_file["mqtt"] else False
